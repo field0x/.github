@@ -1,18 +1,19 @@
 [tree]
 ```
-field0x
- |-- core0
- |-- module01
- |-- sandbox0
- |-- archive-b
- \-- bundle0
+filed0x
+├── core0
+├── module01
+│   ├── d
+│   ├── r
+│   └── f
+├── bundle0
+└── sandbox0
  ```
 
 [flow]
 ```
-input     ->  sandbox0
-refine    ->  module01
-stabilize ->  archive-b
-compile   ->  bundle0
+WIP       ->  module01
+fragment  ->  sandbox0
+outputs   ->  bundle0
 anchor    ->  core0
 ```
